@@ -53,18 +53,28 @@ let thisArr = numArr.map((i) => (i += 1));
 
 console.log(thisArr);
 
-let nums = [1,2,3];
+let nums = [1, 2, 3, 4, 5];
 console.log("Nums:", nums);
 
-let nums2 = nums.map(function(el)){
+let nums2 = nums.map(function (el) {
   return el + 1;
-}
+});
 console.log("Nums2:", nums2);
 
-let nums3 = nums.map((el)=>{return el+3});
+let nums3 = nums.map((el) => {
+  return el + 3;
+});
+console.log("Nums3", nums3);
 
+let nums4 = nums.map(function (el) {
+  return el + 4;
+});
+console.log("Nums4", nums4);
 
-
+let nums5 = nums.map(function (el) {
+  return el + 5;
+});
+console.log("Nums:", nums5);
 
 // //Using a reduce method
 // console.log("");
