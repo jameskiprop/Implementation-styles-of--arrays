@@ -48,10 +48,23 @@ console.log(numArr);
 // //using a map method
 console.log("");
 console.log("using the MAP METHOD");
-let nums = "";
-let newArr = nums.map((i) => (i += 1));
 
-console.log(numArr);
+let thisArr = numArr.map((i) => (i += 1));
+
+console.log(thisArr);
+
+let nums = [1,2,3];
+console.log("Nums:", nums);
+
+let nums2 = nums.map(function(el)){
+  return el + 1;
+}
+console.log("Nums2:", nums2);
+
+let nums3 = nums.map((el)=>{return el+3});
+
+
+
 
 // //Using a reduce method
 // console.log("");
